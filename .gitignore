@@ -74,3 +74,6 @@ build/
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 *.prefs
+example/android/app/.classpath
+example/android/app/.project
+android/.classpath
