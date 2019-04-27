@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:account_manager_plugin/account_manager_plugin.dart';
@@ -13,7 +12,7 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();  
-  String _currentAccounts = 'Anonymous';
+  String _currentAccounts = 'uyeikel@gmail.com';
   List<dynamic> accounts = List();
   Future<List<DropdownMenuItem<String>>> _dropDownMenuItems;
 
@@ -29,7 +28,7 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         key: _scaffoldKey,
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Plugin AccountManager'),
         ),
         body: Center(
             child: Column(
@@ -86,10 +85,9 @@ class _MyAppState extends State<MyApp> {
     List<DropdownMenuItem<String>> items = new List();
     if (list.length > 0) {
       items.add(new DropdownMenuItem(
-          value: 'Anonymous', child: new Text('Anonymous')));
+          value: 'uyeikel@gmail.com', child: new Text('uyeikel@gmail.com')));
       for (String mail in list.whereType<String>()) {
         debugPrint('ACCOUNT: $mail');
-        //accounts.add(mail);
         items.add(new DropdownMenuItem(value: mail, child: new Text('$mail')));
       }
       items.forEach((f) => print('Value List: ${f.value}'));
