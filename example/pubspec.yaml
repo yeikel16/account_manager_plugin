@@ -2,7 +2,7 @@ name: account_manager_plugin_example
 description: AccountManager for Android obtains all accounts registered in the user's device
 author: Yeikel Uriarte Arteaga <uyeikel@gmail.com>
 homepage: https://github.com/Yeikel200/account_manager_plugin
-version: 0.0.2
+version: 0.0.3
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
